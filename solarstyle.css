@@ -1,134 +1,127 @@
-body{
-    background-color: rgb(9, 9, 9);
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-background-image: url(pexels-francesco-ungaro-998641.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-backdrop-filter: blur(20%);
-backdrop-filter: contrast(2.8em);
-
-
+body {
+  background-color: rgba(9, 9, 9, 0.785);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url(pexels-francesco-ungaro-998641.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20%);
+  backdrop-filter: contrast(2.8em);
 }
-.container{
-    font-size: 10px;
-    width: 60em;
-    height: 60em;
-    position: relative;
-    background-color: dark;
-    display: flex;
-    flex-wrap: wrap;
+.container {
+  font-size: 10px;
+  width: 60em;
+  height: 60em;
+  position: relative;
+  background-color: dark;
+  display: flex;
+  flex-wrap: wrap;
 }
-.sun{
-    position: absolute;
-background-color: orangered;
-    top: 20em;
-    left: 20em;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-    box-shadow:  0 0 5em rgb(250, 160, 6);
+.sun {
+  position: absolute;
+  background-color: orangered;
+  top: 20em;
+  left: 20em;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  box-shadow: 0 0 5em rgb(250, 160, 6);
 }
-.mercury{
-    height: 30em;
-    width: 30em;
-    border-radius: 50%;
-    position: absolute;
-    top: 15em;
-    left: 15em;
-    border-style: solid;
-    border-color: white;
-    border-radius: 50%;
-    border-width:  0 0 0.1em 0.1em;
-    animation: orbit 15s linear infinite;
-    
+.mercury {
+  height: 30em;
+  width: 30em;
+  border-radius: 50%;
+  position: absolute;
+  top: 15em;
+  left: 15em;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  border-width: 0 0 0.1em 0.1em;
+  animation: orbit 15s linear infinite;
 }
-.mercury::before{
-    content: '';
-    background-color: brown;
-    position: absolute;
-    border-radius: 50%;
-    top: 6.5em;
-    width: 3em;
-    height: 3em;
-    animation: orbit 15s linear infinite;
+.mercury::before {
+  content: "";
+  background-color: brown;
+  position: absolute;
+  border-radius: 50%;
+  top: 6.5em;
+  width: 3em;
+  height: 3em;
+  animation: orbit 15s linear infinite;
 }
-.moon{
-
-    width: 6.5em;
-    height: 6.5em;
-    position: absolute;
-    right: 25em;
-    top: 5em;
-    border-radius: 50%;
-    border-color: white;
-    border-style: solid;
-    border-width:  0 0 0.1em 0.1em;
-    animation: orbit 2s linear infinite;
+.moon {
+  width: 6.5em;
+  height: 6.5em;
+  position: absolute;
+  right: 25em;
+  top: 5em;
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 0 0.1em 0.1em;
+  animation: orbit 2s linear infinite;
 }
-.moon::before{
-    content: '';
-    height: 1em;
-    width: 1em;
-    background-color: gray;
-    position: absolute;
-    top: 0.9em;
-    left: 0.1em;
-    border-radius: 50%;
+.moon::before {
+  content: "";
+  height: 1em;
+  width: 1em;
+  background-color: gray;
+  position: absolute;
+  top: 0.9em;
+  left: 0.1em;
+  border-radius: 50%;
 }
-.venus{
-    width:41em;
-    height: 41em;
-    position: absolute;
-    top: 11em;
-    left: 9.5em;
-     border-radius: 50%;
-    border-color: rgb(10, 102, 182);
-    border-style: solid;
-    border-width: 0.1em 0.1em 0 0;
-    animation: orbit 20s linear infinite;
-
+.venus {
+  width: 41em;
+  height: 41em;
+  position: absolute;
+  top: 11em;
+  left: 9.5em;
+  border-radius: 50%;
+  border-color: rgb(10, 102, 182);
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  animation: orbit 20s linear infinite;
 }
-.venus::before{
-    content: '';
-    height: 3em;
-    width: 3em;
-    background-color: rgb(0, 98, 255);
-    position: absolute;
-    top: 7em;
-    left: 2em;
-    border-radius: 50%;
-
-
+.venus::before {
+  content: "";
+  height: 3em;
+  width: 3em;
+  background-color: rgb(0, 98, 255);
+  position: absolute;
+  top: 7em;
+  left: 2em;
+  border-radius: 50%;
 }
-.earth{
-    width:30em;
-    height: 30em;
-    position: absolute;
-    top: 5.5em;
-    left: 32em;
-     border-radius: 50%;
-    border-color: rgb(249, 252, 252);
-    border-style: solid;
-    border-width: 0.1em 0.1em 0 0;
-    animation: orbit 45s linear infinite;
+.earth {
+  width: 30em;
+  height: 30em;
+  position: absolute;
+  top: 5.5em;
+  left: 32em;
+  border-radius: 50%;
+  border-color: rgb(249, 252, 252);
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  animation: orbit 45s linear infinite;
 }
-.earth::before{
-    content: '';
-    height: 3em;
-    width: 3em;
-    background-color: rgb(9, 214, 236);
-    position: absolute;
-    top: 4em;
-    left: 2em;
-    border-radius: 50%;
+.earth::before {
+  content: "";
+  height: 3em;
+  width: 3em;
+  background-color: rgb(9, 214, 236);
+  position: absolute;
+  top: 4em;
+  left: 2em;
+  border-radius: 50%;
 }
 
 @keyframes orbit {
-to{
-transform: rotate(360deg);
-}
+  to {
+    transform: rotate(360deg);
+  }
 }
