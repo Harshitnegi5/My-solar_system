@@ -113,7 +113,7 @@ body {
   content: "";
   height: 3em;
   width: 3em;
-  background-color: rgb(9, 214, 236);
+  background-color: rgba(9, 213, 236, 0.909);
   position: absolute;
   top: 4em;
   left: 2em;
@@ -122,6 +122,6 @@ body {
 
 @keyframes orbit {
   to {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
 }
