@@ -1,17 +1,15 @@
-body{
-    background-color: rgb(9, 9, 9);
-display: flex;
-align-items: center;
-justify-content: center;
-overflow: hidden;
-background-image: url(pexels-francesco-ungaro-998641.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-backdrop-filter: blur(20%);
-backdrop-filter: contrast(2.8em);
-
-
+body {
+  background-color: rgb(9, 9, 9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url(pexels-francesco-ungaro-998641.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(20%);
+  backdrop-filter: contrast(2.8em);
 }
 .container {
   font-size: 10px;
